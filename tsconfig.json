@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es6",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "lib": [
+      "es2015",
+      "es2017",
+      "dom"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true
+  }
+}
