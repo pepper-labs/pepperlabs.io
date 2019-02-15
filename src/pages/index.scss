@@ -99,6 +99,57 @@
       height: auto;
       width: auto;
       position: static;
+      max-height: 50vh;
+    }
+
+    $postAnimationDuration: 2s;
+    .post {
+      backface-visibility: hidden;
+      transform: translateY(129px) translateX(58px);
+      animation: post-elevation $postAnimationDuration .1s ease-in-out forwards,
+        post-pulse 3s $postAnimationDuration + .1s ease-in-out infinite;
+    }
+
+    @keyframes post-elevation {
+      from {
+        transform: translateY(129px) translateX(58px);
+      }
+
+      to {
+        transform: translateY(0) translateX(0);
+      }
+    }
+
+    @keyframes post-pulse {
+      0% {
+        transform: translateY(0) translateX(0);
+      }
+
+      50% {
+        $yTranslateSize: 10px;
+        $ratio: 0.449612403100775;
+        $xTranslateSize: $yTranslateSize * $ratio;
+        transform: translateY($yTranslateSize) translateX($xTranslateSize);
+      }
+
+      100% {
+        transform: translateY(0) translateX(0);
+      }
+    }
+
+    .post-background {
+      fill: rgb(178, 44, 44);
+      animation: post-background $postAnimationDuration .1s ease-out forwards;
+    }
+
+    @keyframes post-background {
+      from {
+        fill: rgba(0, 44, 44, .7);
+      }
+
+      to {
+        fill: rgba(178, 44, 44, 1);
+      }
     }
   }
 }

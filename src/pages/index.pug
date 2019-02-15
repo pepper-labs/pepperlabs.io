@@ -39,7 +39,7 @@ html(lang="en")
   body
     .site-wrapper
       .logo
-        img.logo__image(src="/logo-grayscale.svg" alt="PepperLabs.io" width="40")
+        .logo__image(src="/logo-grayscale.svg" alt="PepperLabs.io" width="40")
         .logo__text
           strong Pepper
           | Labs
@@ -52,8 +52,7 @@ html(lang="en")
               div
                 a(href="#").button.button--white find out more
           .hero__illustration
-            img(src="/hero.svg" alt="PepperLabs.io" width="100%" height="100%")
-
+            include hero.svg
 
       .team
         .team__illustration

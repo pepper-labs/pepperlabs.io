@@ -1144,7 +1144,7 @@
 								</clipPath>
 								<g class="st32">
 									<polygon class="st2" points="1516.6,1100.7 1091.3,855.2 1688.8,510.2 2114.1,755.7 									"/>
-									<polygon class="st10" points="1022.1,815.2 596.8,569.7 1194.3,224.7 1619.6,470.2 									"/>
+									<polygon class="st10 post-background" points="1022.1,815.2 596.8,569.7 1194.3,224.7 1619.6,470.2 									"/>
 								</g>
 							</g>
 						</g>
@@ -1162,25 +1162,27 @@
 					<text transform="matrix(0.8715 0.5031 -0.866 0.5 1431.8607 197.6024)" class="st0 st37 st38">diam nonummy nibh euismod tincidunt ut laoreet dolore </text>
 					<text transform="matrix(0.8715 0.5031 -0.866 0.5 1409.0851 210.7523)" class="st0 st37 st38">magna aliquam erat volutpat. Ut wisi enim ad minim veniam, </text>
 					<text transform="matrix(0.8715 0.5031 -0.866 0.5 1386.3956 223.8524)" class="st0 st37 st38">quis nostrud exerci tation ullamcorper suscipit lobortis nisl </text>
-					<polygon class="st2" points="1021.5,719 596.3,473.5 1193.8,128.5 1619,374 					"/>
-					<g>
+					<g class="post">
+						<polygon class="st2" points="1021.5,719 596.3,473.5 1193.8,128.5 1619,374 					"/>
+						<g>
 						<polygon class="st0" points="1083,646.4 722.1,438 768.6,411.2 1129.5,619.5 						"/>
-						<polygon class="st1" points="829.9,574.1 658.1,474.9 704.7,448.1 876.4,547.3 						"/>
-						<polygon class="st1" points="1019,683.3 847.2,584.1 893.7,557.3 1065.5,656.4 						"/>
+							<polygon class="st1" points="829.9,574.1 658.1,474.9 704.7,448.1 876.4,547.3 						"/>
+							<polygon class="st1" points="1019,683.3 847.2,584.1 893.7,557.3 1065.5,656.4 						"/>
 					</g>
-					<g>
+						<g>
 						<g>
 							<path class="st0" d="M1149.9,207.2l332.9,192.2l-330.6,190.9L819.3,398.1L1149.9,207.2 M1149.9,191L791.3,398l360.9,208.3
 								l358.6-207L1149.9,191L1149.9,191z"/>
 						</g>
-						<g>
+							<g>
 							<line class="st39" x1="1150.4" y1="277.9" x2="1151.7" y2="519.5"/>
 						</g>
-						<g>
+							<g>
 							<line class="st39" x1="1360.4" y1="399.1" x2="941.8" y2="398.3"/>
 						</g>
 					</g>
-					<polygon class="st1" points="1527.1,389.9 1166.2,181.6 1197.6,163.5 1558.4,371.9 					"/>
+						<polygon class="st1" points="1527.1,389.9 1166.2,181.6 1197.6,163.5 1558.4,371.9 					"/>
+					</g>
 				</g>
 			</g>
 		</g>
