@@ -46,7 +46,7 @@ const plugins = [
 if (isProduction) {
   plugins.push(
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthgstash].css',
+      filename: '[name].[contenthash].css',
       chunkFilename: '[name].[id].[contenthash].css'
     }),
     new ScriptExtHtmlWebpackPlugin({ defaultAttribute: 'async' }),
