@@ -17,5 +17,5 @@ $ npm run build
 ### Release
 
 ```
-$ cd dist && git add --all && git commit -m \"Release at $(date)\" && git push
+$ cd dist && git add --all && git commit -m "Release at $(date)" && git push
 ```
