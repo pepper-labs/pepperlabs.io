@@ -122,18 +122,18 @@
 
     @keyframes post-pulse {
       0% {
-        transform: translateY(0) translateX(0);
+        transform: translateY(0) translateX(0) scale(1);
       }
 
       50% {
         $yTranslateSize: 10px;
         $ratio: 0.449612403100775;
         $xTranslateSize: $yTranslateSize * $ratio;
-        transform: translateY($yTranslateSize) translateX($xTranslateSize);
+        transform: translateY($yTranslateSize) translateX($xTranslateSize) ;
       }
 
       100% {
-        transform: translateY(0) translateX(0);
+        transform: translateY(0) translateX(0) scale(1);
       }
     }
 
