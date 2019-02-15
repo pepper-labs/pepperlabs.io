@@ -9,6 +9,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -35,6 +36,17 @@ const optimization = isProduction ? {
 const plugins = [
   new CleanWebpackPlugin(['dist']),
   new CopyWebpackPlugin([{ from: 'assets' }]),
+  new WorkboxPlugin.GenerateSW({
+    runtimeCaching: [
+      {
+        urlPattern: /.*/,
+        handler: 'networkFirst',
+        options: {
+          networkTimeoutSeconds: 5
+        }
+      }
+    ]
+  }),
   new HtmlWebpackPlugin({
     template: './src/pages/index.pug',
     chunks: ['home'],
