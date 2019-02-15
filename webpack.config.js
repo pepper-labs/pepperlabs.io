@@ -42,7 +42,7 @@ const plugins = [
         urlPattern: /.*/,
         handler: 'networkFirst',
         options: {
-          networkTimeoutSeconds: 5
+          networkTimeoutSeconds: 10
         }
       }
     ]
