@@ -35,7 +35,7 @@ const optimization = isProduction ? {
 
 const plugins = [
   new CleanWebpackPlugin(['dist'], {
-    exclude: ['.git']
+    exclude: ['.git', 'CNAME']
   }),
   new CopyWebpackPlugin([{ from: 'assets' }]),
   new WorkboxPlugin.GenerateSW({
