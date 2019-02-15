@@ -54,6 +54,12 @@ const plugins = [
     chunks: ['home'],
     filename: './index.html',
     minify: true
+  }),
+  new HtmlWebpackPlugin({
+    template: './src/pages/404.pug',
+    chunks: ['404'],
+    filename: './404.html',
+    minify: true
   })
 ];
 
@@ -70,7 +76,8 @@ if (isProduction) {
 
 module.exports = {
   entry: {
-    home: ['./src/style/common.scss', './src/pages/index.scss', './src/pages/index.ts']
+    home: ['./src/style/common.scss', './src/pages/index.scss', './src/pages/index.ts'],
+    404: ['./src/style/common.scss', './src/pages/404.scss']
   },
   optimization,
   plugins,

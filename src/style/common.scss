@@ -41,3 +41,26 @@ body {
     }
   }
 }
+
+.logo {
+  padding: 21px 0 0 21px;
+
+  &__image {
+    vertical-align: middle;
+  }
+
+  &__text {
+    cursor: default;
+    display: inline-block;
+    vertical-align: middle;
+    color: #000;
+    font-family: 'Roboto Slab', serif;
+    padding-left: 11px;
+    font-size: 1.2em;
+
+    &--bw {
+      color: #fff;
+    }
+  }
+}
+

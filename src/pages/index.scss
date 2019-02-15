@@ -1,24 +1,5 @@
 @import '../style/variables.scss';
 
-.logo {
-  position: absolute;
-  z-index: 2;
-  padding: 21px 0 0 21px;
-
-  &__image {
-    vertical-align: middle;
-  }
-
-  &__text {
-    display: inline-block;
-    vertical-align: middle;
-    color: #fff;
-    font-family: 'Roboto Slab', serif;
-    padding-left: 11px;
-    font-size: 1.2em;
-  }
-}
-
 .hero {
   z-index: 1;
   background-image: linear-gradient(to bottom right, darken($gray, 10%), lighten($gray, 10%));
@@ -139,7 +120,7 @@
         $yTranslateSize: 10px;
         $ratio: 0.449612403100775;
         $xTranslateSize: $yTranslateSize * $ratio;
-        transform: translateY($yTranslateSize) translateX($xTranslateSize) ;
+        transform: translateY($yTranslateSize) translateX($xTranslateSize);
       }
 
       100% {
