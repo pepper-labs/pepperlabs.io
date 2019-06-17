@@ -206,14 +206,20 @@
     padding: 17px;
   }
 
-  &__header {
+  &__text {
     color: #fff;
     padding: 37px;
-    font-size: 3em;
+    font-size: 2.25em;
     font-weight: bolder;
     line-height: 1;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 960px;
+    margin: 37px auto -250px auto;
+
+    @media #{$mobile} {
+      margin: 0 auto -100px auto;
+      font-size: 1.5em;
+      padding: 17px;
+    }
   }
 
   &__illustration {
@@ -227,5 +233,17 @@
       position: relative;
       width: 900px;
     }
+  }
+
+  &__employers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  &__employer {
+    transform: scale(0.3);
   }
 }
