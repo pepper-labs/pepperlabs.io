@@ -247,3 +247,32 @@
     transform: scale(0.3);
   }
 }
+
+.contact {
+  position: relative;
+  z-index: 2;
+  margin: -250px auto 0 auto;
+  max-width: 960px;
+  
+  @media #{$mobile} {
+    padding: 0 17px;
+    margin: -200px auto 0 auto;
+  }
+
+  &__header {
+    color: $red;
+    font-size: 3.2em;
+    font-weight: bolder;
+  }
+
+  &__content {
+    margin: 37px 0;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  &__link {
+    color: $gray;
+    font-weight: bold;
+  }
+}
