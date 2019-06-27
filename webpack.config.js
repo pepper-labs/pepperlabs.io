@@ -2,7 +2,7 @@
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -34,15 +34,15 @@ const optimization = isProduction ? {
 };
 
 const plugins = [
-  new CleanWebpackPlugin(['dist'], {
-    exclude: ['.git', 'CNAME']
+  new CleanWebpackPlugin({
+    cleanAfterEveryBuildPatterns: ['dist/*/**', '!dist/.git', '!dist/CNAME']
   }),
   new CopyWebpackPlugin([{ from: 'assets' }]),
   new WorkboxPlugin.GenerateSW({
     runtimeCaching: [
       {
         urlPattern: /.*/,
-        handler: 'networkFirst',
+        handler: 'NetworkFirst',
         options: {
           networkTimeoutSeconds: 10
         }
