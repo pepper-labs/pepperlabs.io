@@ -34,7 +34,9 @@ const optimization = isProduction ? {
 };
 
 const plugins = [
-  new CleanWebpackPlugin(),
+  new CleanWebpackPlugin({
+    cleanOnceBeforeBuildPatterns: ['dist/*/**.(js|css|gz)*', '!dist/.git', '!dist/CNAME']
+  }),
   new CopyWebpackPlugin([{ from: 'assets' }]),
   new WorkboxPlugin.GenerateSW({
     runtimeCaching: [
