@@ -49,12 +49,34 @@ html(lang="en")
           .hero__illustration
             include hero.svg
 
-      .team
-        .team__illustration
-          img(src="/pepper.svg" alt="Spice up your development")
-        .team__content
-          h2.team__header well-seasoned, battle-tested team
-          .team__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo massa eu auctor gravida. In vitae leo eu metus iaculis volutpat. Quisque at lorem quis dui rutrum lobortis. In at purus sit amet neque sagittis venenatis et ut lacus. Aliquam eu quam ultrices risus cursus feugiat. Quisque ullamcorper imperdiet commodo.
+      .about
+        .about__col
+          .about__header culture
+          .about__subheader company culture
+          ul.services
+            li.services__item e2e Agile Transformation
+            li.services__item Agile Coaching, mentoring
+            li.services__item Agile training
+
+        .about__col
+          .about__header product
+          .about__subheader onsite agile product development
+          ul.services
+            li.services__item Agile engineering
+              .services__item__context (processes, best practices, CI/CD, TDD, pairing)
+            li.services__item Legacy code modernization
+            li.services__item Product design, development and launch
+
+        .about__col
+          .about__header technology
+          .about__subheader remote software delivery
+          ul.services
+            li.services__item Software solution delivery
+              .services__item__context (UX, UI, iOS, android, backend, frontend)
+            li.services__item Cloud technologies
+              .services__item__context (migration, architecture)
+            li.services__item Data driven solutions
+              .services__item__context (data engineering / machine learning / reporting / data analysis)
 
       .testimonials
         .testimonials__content
@@ -70,6 +92,13 @@ html(lang="en")
             | Working in many industries including e-commerce, telco and banking gives us the advantage to have a deep
             | understanding of how great software is built.
           img.testimonials__illustration(src="/testimonials.svg" alt="trusted by our employers" width="100%")
+
+      .team
+        .team__illustration
+          img(src="/pepper.svg" alt="Spice up your development")
+        .team__content
+          h2.team__header well-seasoned, battle-tested team
+          .team__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo massa eu auctor gravida. In vitae leo eu metus iaculis volutpat. Quisque at lorem quis dui rutrum lobortis. In at purus sit amet neque sagittis venenatis et ut lacus. Aliquam eu quam ultrices risus cursus feugiat. Quisque ullamcorper imperdiet commodo.
 
       .contact#contact-us
         .contact__header chill out, we've got this
