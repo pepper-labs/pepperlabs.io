@@ -11,9 +11,7 @@
     min-height: 500px;
 
     @media #{$mobile} {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      min-height: 580px;
     }
   }
 
@@ -38,7 +36,6 @@
       transform: none;
       width: auto;
       padding: 0;
-      margin: 37px 0 0 0;
       position: static;
     }
 
@@ -67,8 +64,12 @@
       }
 
       @media #{$mobile} {
-        font-size: $size * .7;
+        font-size: $size * .6;
         width: auto;
+      }
+
+      @media #{$smallMobile} {
+        font-size: $size * .4;
       }
     }
 
@@ -76,6 +77,10 @@
       color: #fff;
       font-weight: normal;
       max-width: 500px;
+
+      @media #{$mobile} {
+        font-size: 1.3em;
+      }
     }
   }
 
@@ -96,8 +101,8 @@
     @media #{$mobile} {
       height: auto;
       width: auto;
-      position: static;
       max-height: 80vh;
+      transform: translate(38%, 50%);
     }
 
     @media only screen and (min-width: 1600px) {
@@ -274,7 +279,7 @@
 
   @media #{$mobile} {
     padding: 0 17px;
-    margin: -200px auto 0 auto;
+    margin: -97px auto 0 auto;
   }
 
   &__header {
