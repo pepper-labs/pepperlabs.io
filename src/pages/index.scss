@@ -338,18 +338,21 @@
 .contact {
   position: relative;
   z-index: 2;
-  margin: 0 auto;
-  max-width: 960px;
-
-  @media #{$mobile} {
-    padding: 0 17px;
-    margin: 37px auto;
-  }
+  margin-top: 37px;
+  background-color: $gray;
+  color: #fff;
+  padding: 37px 17px;
 
   &__header {
-    color: $red;
+    text-align: center;
     font-size: 3.2em;
     font-weight: bolder;
+
+    @media #{$mobile} {
+      text-align: left;
+      padding: 0 19px;
+      font-size: 3em;
+    }
   }
 
   &__content {
@@ -359,7 +362,7 @@
   }
 
   &__link {
-    color: $gray;
+    color: #fff;
     font-weight: bold;
   }
 }
@@ -368,7 +371,7 @@
   display: flex;
   color: $gray;
   max-width: 1200px;
-  padding: 37px 17px;
+  padding: 57px 17px;
   margin: 0 auto;
 
   @media #{$mobile} {
@@ -419,6 +422,12 @@
     padding: 15px;
     color: $gray;
     border-bottom: 1px solid lighten($gray, 78%);
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+    flex-direction: row;
 
     &:last-child {
       border-bottom: none;
@@ -427,6 +436,7 @@
     &__context {
       color: lighten($gray, 18%);
       font-size: .7em;
+      flex: 0 0 100%;
     }
   }
 }
