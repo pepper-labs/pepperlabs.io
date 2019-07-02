@@ -118,10 +118,50 @@ html(lang="en")
           img.testimonials__illustration(src="/testimonials.svg" alt="trusted by our employers" width="100%")
 
       .team
-        .team__illustration
+        .team__illustration.team__side
           img(src="/pepper.svg" alt="Spice up your development")
         .team__content
-          h2.team__header well-seasoned, battle-tested team
+          h2.team__header well-seasoned,
+            br
+            | battle-tested team
+          .team__members
+            .team__member
+              .team__member__picture
+                img(src="/richard-tamaska.png" srcset="/richard-tamaska.png, /richard-tamaska@2x.png 2x" alt="Richárd Tamaska")
+              .team__member__info
+                .team__member__name Richárd Tamaska
+                .team__member__responsibility Partner
+                .team__member__bio Certified Agile Coach & Scrum Master, Corporate Agile Transformation expert
+            .team__member
+              .team__member__picture
+                img(src="/richard-szabo.png" srcset="/richard-szabo.png, /richard-szabo@2x.png 2x" alt="Richárd Szabó")
+              .team__member__info
+                .team__member__name Richárd Szabó
+                .team__member__responsibility Partner
+                .team__member__bio Mobile Architect, DevOps Expert & Agile Developer
+            .team__member
+              .team__member__picture
+                img(src="/gabor-dobrei.png" srcset="/gabor-dobrei.png, /gabor-dobrei@2x.png 2x" alt="Gábor Döbrei")
+              .team__member__info
+                .team__member__name Gábor Döbrei
+                .team__member__responsibility Partner
+                .team__member__bio Cloud architect, former startup exec, lecturer and researcher at BUTE
+            .team__member
+              .team__member__picture
+                img(src="/bence-somogyi.png" srcset="/bence-somogyi.png, /bence-somogyi@2x.png 2x" alt="Bence Somogyi")
+              .team__member__info
+                .team__member__name Bence Somogyi
+                .team__member__responsibility Partner
+                .team__member__bio Frontend expert, senior agile developer, former startupper
+            .team__member
+              .team__member__picture
+                img(src="/judit-dobrei-rakonczai.png" srcset="/judit-dobrei-rakonczai.png, /judit-dobrei-rakonczai@2x.png 2x" alt="Judit Döbrei-Rakonczai")
+              .team__member__info
+                .team__member__name Judit Döbrei-Rakonczai
+                .team__member__responsibility Partner
+                .team__member__bio Management reporting, BI expert, former GE, former KPMG
+
+        .team__side
 
       .contact#contact-us
         .contact__header chill out, we've got this

@@ -116,11 +116,12 @@
     }
 
     $postAnimationDuration: 2s;
+
     .post {
       backface-visibility: hidden;
       transform: translateY(129px) translateX(58px);
       animation: post-elevation $postAnimationDuration .1s ease-in-out forwards,
-        post-pulse 3s $postAnimationDuration + .1s ease-in-out infinite;
+      post-pulse 3s $postAnimationDuration + .1s ease-in-out infinite;
     }
 
     @keyframes post-elevation {
@@ -168,19 +169,17 @@
 }
 
 .team {
-  max-width: 1200px;
-  padding: 47px 17px;
+  padding: 47px 0;
   margin: -250px auto 0 auto;
   display: flex;
 
   @media #{$mobile} {
-    flex-direction: column-reverse;
-    max-width: 100%;
+    max-width: 90%;
+    margin: -250px auto 0;
   }
 
   &__content {
-    width: 500px;
-    margin: 71px 0 0 -180px;
+    flex: 1 1 60%;
 
     @media #{$mobile} {
       width: auto;
@@ -188,33 +187,98 @@
     }
   }
 
-  &__illustration {
-    margin-left: 45px;
-
-    @media #{$tallMobile} {
-      margin-left: -57px;
-    }
+  &__side {
+    flex: 1 1 20%;
 
     @media #{$mobile} {
-      overflow-x: hidden;
-      margin: 0 -17px;
+      display: none;
     }
+  }
 
+  &__illustration {
     img {
+      width: 120%;
+      margin-left: -50%;
+
       @media #{$mobile} {
-        width: 150%;
-        margin-left: 25%;
-        max-height: 70vh;
+        display: none;
       }
     }
   }
 
   &__header {
-    margin: 0;
+    margin: 0 0 43px;
     color: $red;
     font-size: 3em;
     font-weight: bolder;
     line-height: 1;
+  }
+
+  &__members {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    @media #{$mobile} {
+      display: block;
+    }
+  }
+
+  &__member {
+    $margin: 27px;
+    flex: 1 1 50%;
+    max-width: 50%;
+    display: flex;
+
+    @media #{$mobile} {
+      display: block;
+      max-width: none;
+    }
+
+    &__picture {
+      $pictureSize: 130px;
+      flex: 0 0 $pictureSize;
+      width: $pictureSize;
+      height: $pictureSize;
+      overflow: hidden;
+      border-radius: 50%;
+      margin: $margin;
+      box-shadow: 11px 11px 33px rgba(0, 0, 0, .3);
+
+      @media #{$mobile} {
+        $mobileSize: $pictureSize * 0.9;
+        flex: 0 0 $mobileSize;
+        width: $mobileSize;
+        height: $mobileSize;
+        margin: $margin auto;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__info {
+      margin: $margin 0 $margin;
+      color: $gray;
+    }
+
+    &__name {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: $red;
+    }
+
+    &__responsibility {
+      font-size: .9em;
+      margin-bottom: 11px;
+      color: lighten($gray, 18%);
+    }
+
+    &__bio {
+      font-size: 1.2em;
+    }
   }
 }
 
@@ -279,7 +343,7 @@
 
   @media #{$mobile} {
     padding: 0 17px;
-    margin: -97px auto 0 auto;
+    margin: 37px auto;
   }
 
   &__header {
