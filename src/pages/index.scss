@@ -99,8 +99,8 @@
     }
 
     @media #{$mobile} {
-      height: auto;
-      width: auto;
+      height: 550px;
+      width: 750px;
       max-height: 80vh;
       transform: translate(38%, 50%);
     }
