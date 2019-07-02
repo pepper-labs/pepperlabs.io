@@ -229,6 +229,7 @@
     flex: 1 1 50%;
     max-width: 50%;
     display: flex;
+    align-items: center;
 
     @media #{$mobile} {
       display: block;
