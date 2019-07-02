@@ -328,6 +328,10 @@
     justify-content: space-around;
     margin: 0 auto;
     padding: 0 37px;
+
+    @media #{$mobile} {
+      padding: 0 9px;
+    }
   }
 
   &__employer {
