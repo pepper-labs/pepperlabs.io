@@ -34,14 +34,12 @@ const optimization = isProduction ? {
 };
 
 const plugins = [
-  new CleanWebpackPlugin({
-    cleanOnceBeforeBuildPatterns: ['dist/*/**.(js|css|gz)*', '!dist/.git', '!dist/CNAME']
-  }),
-  new CopyWebpackPlugin([{ from: 'assets' }]),
+  new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: ['dist'] }),
+  new CopyWebpackPlugin([{ from: 'assets', to: 'static' }]),
   new WorkboxPlugin.GenerateSW({
     runtimeCaching: [
       {
-        urlPattern: /.*/,
+        urlPattern: /static\/.*/,
         handler: 'NetworkFirst',
         options: {
           networkTimeoutSeconds: 10
@@ -58,7 +56,7 @@ const plugins = [
   new HtmlWebpackPlugin({
     template: './src/pages/404.pug',
     chunks: ['404'],
-    filename: './404.html',
+    filename: './static/404.html',
     minify: true
   })
 ];
@@ -66,8 +64,8 @@ const plugins = [
 if (isProduction) {
   plugins.push(
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css',
-      chunkFilename: '[name].[id].[contenthash].css'
+      filename: 'static/[name].[contenthash].css',
+      chunkFilename: 'static/[name].[id].[contenthash].css'
     }),
     new ScriptExtHtmlWebpackPlugin({ defaultAttribute: 'async' }),
     new CompressionPlugin({ test: /\.(js|html|css)$/ })
@@ -110,7 +108,7 @@ module.exports = {
     extensions: ['.ts', '.js']
   },
   output: {
-    filename: '[name].[contenthash].js',
+    filename: 'static/[name].[contenthash].js',
     publicPath: '/',
     path: path.resolve(__dirname, 'dist')
   },
