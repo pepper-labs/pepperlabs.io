@@ -1,21 +1,23 @@
 PepperLabs.io
 ===
 
-## Using `dist` for Github Pages
-
-### Clone the repository into `dist`
-```
-$ git clone git@github.com:pepper-labs/pepperlabs.io.git --branch gh-pages dist
-```
-
 ### Build
 
 ```
 $ npm run build
 ```
 
-### Release
+### Run
 
 ```
-$ cd dist && git add --all && git commit -m "Release at $(date)" && git push
+$ npm start
+```
+
+### Access tokens
+
+Access tokens must be defined via an env variable `ACCESS_TOKENS` in a JSON format.
+For example:
+
+```
+ACCESS_TOKENS='["abc", "def"]'
 ```
