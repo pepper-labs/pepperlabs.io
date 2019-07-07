@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "start": "node src/server",
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -38,5 +40,9 @@
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2",
     "workbox-webpack-plugin": "^4.3.1"
+  },
+  "dependencies": {
+    "debug": "^4.1.1",
+    "express": "^4.17.1"
   }
 }
