@@ -1,5 +1,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 3479.4 2286.8" style="enable-background:new 0 0 3479.4 2286.8;" xml:space="preserve" height="100%">
+<defs>
+	<style type="text/css">@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,700|Roboto:300,400,700');</style>
+</defs>
 <style type="text/css">
 	.st0{fill:#FEFFFE;}
 	.st1{fill:#E7A300;}
@@ -1155,11 +1158,11 @@
 
 						<ellipse transform="matrix(5.421873e-03 -1 1 5.421873e-03 1644.0427 2151)" class="st0" cx="1903.4" cy="249" rx="39.6" ry="68.6"/>
 					<polygon class="st34" points="2153.8,544.5 1489.1,160.7 1529.7,137.3 2194.5,521.1 					"/>
-					<text transform="matrix(0.8715 0.5031 -0.866 0.5 1497.4279 155.8887)" class="st0 st35 st36">The best product</text>
+					<text transform="matrix(0.8715 0.5031 -0.866 0.5 1497.4279 155.8887)" class="st0 st35 st36" style="font-family:Roboto">The best product</text>
 					<polygon class="st34" points="1879.7,522.9 1374.1,230.9 1468.8,176.3 1974.4,468.2 					"/>
-					<text transform="matrix(0.8715 0.5031 -0.866 0.5 1454.55 184.5023)" class="st0 st37 st38">We provide professional hands-on engineering, training,</text>
-					<text transform="matrix(0.8715 0.5031 -0.866 0.5 1431.8607 197.6024)" class="st0 st37 st38">coaching to bring cutting edge technology and</text>
-					<text transform="matrix(0.8715 0.5031 -0.866 0.5 1409.0851 210.7523)" class="st0 st37 st38">agility to your business.</text>
+					<text transform="matrix(0.8715 0.5031 -0.866 0.5 1454.55 184.5023)" class="st0 st37 st38" style="font-family:Roboto">We provide professional hands-on engineering, training,</text>
+					<text transform="matrix(0.8715 0.5031 -0.866 0.5 1431.8607 197.6024)" class="st0 st37 st38" style="font-family:Roboto">coaching to bring cutting edge technology and</text>
+					<text transform="matrix(0.8715 0.5031 -0.866 0.5 1409.0851 210.7523)" class="st0 st37 st38" style="font-family:Roboto">agility to your business.</text>
 					<g class="post">
 						<polygon class="st2" points="1021.5,719 596.3,473.5 1193.8,128.5 1619,374 					"/>
 						<g>
