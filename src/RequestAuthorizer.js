@@ -12,11 +12,13 @@ module.exports = class RequestAuthorizer {
       return true;
     }
 
-    const isAuthorized = this._accessTokens.includes(request.query.accessToken);
-    if (!isAuthorized) {
+    const tokenSource = this._accessTokens.get(request.query.accessToken);
+    if (!tokenSource) {
       this._logger.log('unauthorized', { ip: request.ip, path: request.path });
       return false;
     }
+
+    this._logger.log('atuhorized', { tokenSource });
 
     return true;
   }
