@@ -81,7 +81,7 @@ if (isProduction) {
 module.exports = {
   entry: {
     home: ['./src/style/common.scss', './src/pages/index.scss', './src/pages/index.ts'],
-    culture: ['./src/style/common.scss', './src/pages/culture/culture.scss', './src/pages/index.ts'],
+    culture: ['./src/style/common.scss', './src/style/content.scss', './src/pages/index.ts'],
     404: ['./src/style/common.scss', './src/pages/404.scss']
   },
   optimization,

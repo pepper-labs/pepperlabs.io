@@ -1,4 +1,4 @@
-@import '../../style/variables.scss';
+@import './variables.scss';
 
 .common-hero {
   $illustrationMargin: 200px;
@@ -123,6 +123,13 @@
 .content {
   margin: -100px auto 0 auto;
   display: flex;
+  font-size: 1.2em;
+
+  @media #{$mobile} {
+    max-width: 90%;
+    margin: -70px auto 0;
+    display: block;
+  }
 
   &__wrapper {
     max-width: 700px;
@@ -155,5 +162,9 @@
     line-height: 1;
     color: $red;
     margin-bottom: 77px;
+
+    @media #{$mobile} {
+      margin-bottom: 23px;
+    }
   }
 }
