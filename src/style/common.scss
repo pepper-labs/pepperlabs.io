@@ -29,9 +29,17 @@ body {
   display: inline-block;
   text-decoration: none;
   font-weight: 400;
+  color: lighten($gray, 40%);
+  border: 3px solid lighten($gray, 40%);
+  padding: 5px 17px;
+
+  &:hover {
+    color: #fff;
+    background-color: lighten($gray, 40%);
+  }
 
   &--white {
-    border: 3px solid #fff;
+    border-color: #fff;
     padding: 5px 17px;
     color: #fff;
 

@@ -378,6 +378,11 @@
     font-size: 1.1em;
     color: lighten($gray, 40%);
   }
+
+  &__link {
+    font-size: .8em;
+    text-align: center;
+  }
 }
 
 .services {
