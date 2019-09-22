@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+  head
+    include ../../partials/meta
+
+    include ../../partials/share
+
+    link(rel="canonical" href="https://pepperlabs.io")
+    title build better products with an experienced team
+
+    include ../../partials/style
+  body
+    .site-wrapper
+      section.common-hero
+        include ../../partials/logo-bw
+        .common-hero__wrapper
+          header.common-hero__text
+            .common-hero__text__wrapper
+              h1.common-hero__text__header product
+              div
+                h2.common-hero__text__subheader
+                  | The best companies go about building great products differently.
+          .common-hero__illustration
+            img.common-hero__illustration__image(src="/static/content-page-hero.svg", alt="")
+
+      article.content
+        .content__side
+
+        .content__wrapper
+          header.content__header
+            | PepperLabs was created to share best practices and lessons learned about how to build
+            | innovative products customers love.
+
+          p
+            | We have a proven track record in the development of leading products.
+            | We know how great products are built. And we can help you build them, too.
+
+        .content__side
+
+      include ../../partials/contact

@@ -61,8 +61,14 @@ const plugins = [
   }),
   new HtmlWebpackPlugin({
     template: './src/pages/culture/culture.pug',
-    chunks: ['culture'],
+    chunks: ['content'],
     filename: './culture/index.html',
+    minify: true
+  }),
+  new HtmlWebpackPlugin({
+    template: './src/pages/product/product.pug',
+    chunks: ['content'],
+    filename: './product/index.html',
     minify: true
   })
 ];
@@ -81,7 +87,7 @@ if (isProduction) {
 module.exports = {
   entry: {
     home: ['./src/style/common.scss', './src/pages/index.scss', './src/pages/index.ts'],
-    culture: ['./src/style/common.scss', './src/style/content.scss', './src/pages/index.ts'],
+    content: ['./src/style/common.scss', './src/style/content.scss', './src/pages/index.ts'],
     404: ['./src/style/common.scss', './src/pages/404.scss']
   },
   optimization,
