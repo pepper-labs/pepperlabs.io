@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+  head
+    include ../../partials/meta
+
+    include ../../partials/share
+
+    link(rel="canonical" href="https://pepperlabs.io")
+    title build better products with an experienced team
+
+    include ../../partials/style
+  body
+    .site-wrapper
+      section.common-hero
+        include ../../partials/logo-bw
+        .common-hero__wrapper
+          header.common-hero__text
+            .common-hero__text__wrapper
+              h1.common-hero__text__header culture
+              div
+                h2.common-hero__text__subheader
+                  | We are non-dogmatic agilists and truly belive that one size does not fit all.
+                  | Our battle-tested agile coach and product development team will help you to
+                  | being agile, not just doing it.
+          .common-hero__illustration
+            img.common-hero__illustration__image(src="/static/content-page-hero.svg", alt="")
+
+      article.content
+        .content__side.content__illustration
+          img(src="/static/pepper.svg" alt="Spice up your development")
+
+        .content__wrapper
+          header.content__header
+            | With our experience from different industries, and and scaled agile methodologies
+            | (SAFe, LeSS, Spotify like, Nexus etc.).
+            | We are focusing on real values and solutions behind the agile stamp.
+
+          p We bring transparency, and human-centered thinking into your organization, so that we can boost your daily operation, product development, organizational culture and customer satisfaction.
+
+          p Our services in a nutshell:
+
+          ul
+            li Agile transformation roadmap and implementation
+            li Agile maturity assessment, team healthcheck
+            li Agile transformation KPI setting
+            li Onsite PO, PM, SM, AC, TL mentoring and supervision
+            li Hands on trainings and workshops (agile basics, kanban, scrum, XP, LeSS, SAFe, other scaled agile frameworks)
+
+
+        .content__side
+      .contact#contact-us
+        .contact__header chill out, we've got this
+        p.contact__content
+          a.contact__link(href="mailto:info@pepperlabs.io") info@pepperlabs.io

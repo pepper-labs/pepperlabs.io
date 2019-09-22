@@ -58,6 +58,12 @@ const plugins = [
     chunks: ['404'],
     filename: './static/404.html',
     minify: true
+  }),
+  new HtmlWebpackPlugin({
+    template: './src/pages/culture/culture.pug',
+    chunks: ['culture'],
+    filename: './culture/index.html',
+    minify: true
   })
 ];
 
@@ -75,6 +81,7 @@ if (isProduction) {
 module.exports = {
   entry: {
     home: ['./src/style/common.scss', './src/pages/index.scss', './src/pages/index.ts'],
+    culture: ['./src/style/common.scss', './src/pages/culture/culture.scss', './src/pages/index.ts'],
     404: ['./src/style/common.scss', './src/pages/404.scss']
   },
   optimization,

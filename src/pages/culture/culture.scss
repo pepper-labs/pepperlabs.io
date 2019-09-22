@@ -1,0 +1,159 @@
+@import '../../style/variables.scss';
+
+.common-hero {
+  $illustrationMargin: 200px;
+  z-index: 1;
+  background-image: linear-gradient(to bottom right, darken($gray, 10%), lighten($gray, 10%));
+  margin-bottom: $illustrationMargin;
+
+  &__wrapper {
+    position: relative;
+    height: 45vh;
+    min-height: 400px;
+
+    @media #{$mobile} {
+      min-height: 390px;
+    }
+
+    @media only screen and (width: 1024px) and (height: 768px) {
+      min-height: 600px;
+    }
+
+    @media only screen and (height: 1024px) and (width: 768px) {
+      max-height: 350px;
+    }
+
+    @media only screen and (min-width: $maxWidth) {
+      min-height: auto;
+      max-height: 400px;
+    }
+  }
+
+  &__text {
+    $size: 5.5em;
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    word-spacing: 100%;
+
+    @media #{$mobile} {
+      text-align: center;
+      transform: none;
+      width: auto;
+      padding: 0;
+      position: static;
+    }
+
+    &__wrapper {
+      text-align: left;
+      display: inline-block;
+
+      @media #{$mobile} {
+        padding: 17px;
+      }
+    }
+
+    &__header {
+      padding: 0;
+      font-weight: bold;
+      font-family: 'Roboto Slab', serif;
+      color: #fff;
+      font-size: $size;
+      display: inline-block;
+      width: $size;
+      line-height: 1.1;
+      margin: 0 0 11px;
+
+      @media #{$tallMobile} {
+        font-size: $size * .8;
+      }
+
+      @media #{$mobile} {
+        font-size: $size * .6;
+        width: auto;
+      }
+
+      @media #{$smallMobile} {
+        font-size: $size * .4;
+      }
+    }
+
+    &__subheader {
+      color: #fff;
+      font-weight: normal;
+      max-width: 500px;
+
+      @media #{$mobile} {
+        font-size: 1.3em;
+      }
+    }
+  }
+
+  &__illustration {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    pointer-events: none;
+    margin-bottom: -$illustrationMargin;
+    overflow: hidden;
+
+    @media #{$mobile} {
+      left: 0;
+      right: 0;
+      margin-bottom: -$illustrationMargin + 50px;
+    }
+
+    &__image {
+      transform: translateX(18%);
+      pointer-events: none;
+      width: 800px;
+
+      @media #{$mobile} {
+        transform: none;
+        width: 600px;
+      }
+    }
+  }
+}
+
+.content {
+  margin: -100px auto 0 auto;
+  display: flex;
+
+  &__wrapper {
+    max-width: 700px;
+    flex: 1 1 60%;
+  }
+
+  &__side {
+    flex: 1 1 20%;
+
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+
+  &__illustration {
+    img {
+      max-height: 700px;
+      width: 120%;
+      margin-left: -50%;
+
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+  }
+
+  &__header {
+    font-size: 1.7em;
+    font-weight: bolder;
+    line-height: 1;
+    color: $red;
+    margin-bottom: 77px;
+  }
+}
