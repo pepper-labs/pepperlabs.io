@@ -26,9 +26,6 @@ html(lang="en")
             img.common-hero__illustration__image(src="/static/content-page-hero.svg", alt="")
 
       article.content
-        .content__side.content__illustration
-          img(src="/static/pepper.svg" alt="Spice up your development")
-
         .content__wrapper
           header.content__header
             | With our experience from different industries, and and scaled agile methodologies
@@ -37,15 +34,21 @@ html(lang="en")
 
           p We bring transparency, and human-centered thinking into your organization, so that we can boost your daily operation, product development, organizational culture and customer satisfaction.
 
-          p Our services in a nutshell:
 
-          ul
-            li Agile transformation roadmap and implementation
-            li Agile maturity assessment, team healthcheck
-            li Agile transformation KPI setting
-            li Onsite PO, PM, SM, AC, TL mentoring and supervision
-            li Hands on trainings and workshops (agile basics, kanban, scrum, XP, LeSS, SAFe, other scaled agile frameworks)
+        section.services
+          .services__wrapper
+            h2.services__title Our services in a nutshell:
 
-        .content__side
+            ul.services__list
+              li.services__list__item
+                .services__list__item__wrapper Agile transformation roadmap and implementation
+              li.services__list__item
+                .services__list__item__wrapper Agile maturity assessment, team healthcheck
+              li.services__list__item
+                .services__list__item__wrapper Agile transformation KPI setting
+              li.services__list__item
+                .services__list__item__wrapper Onsite PO, PM, SM, AC, TL mentoring and supervision
+              li.services__list__item
+                .services__list__item__wrapper Hands on trainings and workshops (agile basics, kanban, scrum, XP, LeSS, SAFe, other scaled agile frameworks)
 
       include ../../partials/contact

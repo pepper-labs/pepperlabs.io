@@ -24,8 +24,6 @@ html(lang="en")
             img.common-hero__illustration__image(src="/static/content-page-hero.svg", alt="")
 
       article.content
-        .content__side
-
         .content__wrapper
           header.content__header
             | PepperLabs was created to share best practices and lessons learned about how to build
@@ -35,6 +33,28 @@ html(lang="en")
             | We have a proven track record in the development of leading products.
             | We know how great products are built. And we can help you build them, too.
 
-        .content__side
+        section.services
+          .services__wrapper
+            h2.services__title Our services in a nutshell:
+
+            ul.services__list
+              li.services__list__item
+                .services__list__item__wrapper Agile engineering and DevOps culture
+              li.services__list__item
+                .services__list__item__wrapper Cutting edge CI/CD pipeline and cloud native platform
+              li.services__list__item
+                .services__list__item__wrapper Introduction of engineering best practices like TDD and pair programming
+              li.services__list__item
+                .services__list__item__wrapper Legacy code modernization
+              li.services__list__item
+                .services__list__item__wrapper Minimum Viable Product workshops
+              li.services__list__item
+                .services__list__item__wrapper Product discovery workshops
+              li.services__list__item
+                .services__list__item__wrapper User story mapping
+              li.services__list__item
+                .services__list__item__wrapper Product roadmap
+              li.services__list__item
+                .services__list__item__wrapper Product development
 
       include ../../partials/contact
