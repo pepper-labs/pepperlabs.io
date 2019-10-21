@@ -70,6 +70,12 @@ const plugins = [
     chunks: ['content'],
     filename: './product/index.html',
     minify: true
+  }),
+  new HtmlWebpackPlugin({
+    template: './src/pages/technology/technology.pug',
+    chunks: ['content'],
+    filename: './technology/index.html',
+    minify: true
   })
 ];
 
