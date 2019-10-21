@@ -1,0 +1,56 @@
+doctype html
+html(lang="en")
+  head
+    include ../../partials/meta
+
+    include ../../partials/share
+
+    link(rel="canonical" href="https://pepperlabs.io")
+    title build better products with an experienced team
+
+    include ../../partials/style
+  body
+    .site-wrapper
+      section.common-hero
+        include ../../partials/logo-bw
+        .common-hero__wrapper
+          header.common-hero__text
+            .common-hero__text__wrapper
+              h1.common-hero__text__header technology
+              div
+                h2.common-hero__text__subheader
+                  | Successfull companies have one thing in common: they have a great team! We understand that it's hard to hunt for engineering talent, so we did that for you!
+          .common-hero__illustration
+            img.common-hero__illustration__image(src="/static/content-page-hero.svg", alt="")
+
+      article.content
+        .content__wrapper
+          header.content__header
+            | Our company provides top technical talent to clients of all sizes.
+            | We believe that well-crafted software leads to more leads and grows your business.
+
+          p
+            | We build progressive, scalable, value-driven solutions that solve your problems.
+            | You will have enough time to focus on major things that influence your company.
+
+        section.services
+          .services__wrapper
+            h2.services__title Our services in a nutshell:
+
+            ul.services__list
+              li.services__list__item
+                .services__list__item__wrapper Implement processes around code at scale
+              li.services__list__item
+                .services__list__item__wrapper Bring state of the art architecture to your application
+              li.services__list__item
+                .services__list__item__wrapper Reduce time to market
+              li.services__list__item
+                .services__list__item__wrapper Technology Planning and Evaluation
+              li.services__list__item
+                .services__list__item__wrapper Legacy code modernization
+              li.services__list__item
+                .services__list__item__wrapper Proof of Concept Development
+              li.services__list__item
+                .services__list__item__wrapper API Development
+
+      include ../../partials/contact
