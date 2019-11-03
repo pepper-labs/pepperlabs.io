@@ -85,6 +85,10 @@
       font-weight: normal;
       max-width: 500px;
 
+      &.tech {
+        max-width: 700px;
+      }
+
       @media #{$mobile} {
         font-size: 1.3em;
       }
@@ -134,6 +138,18 @@
     margin: 0 auto;
   }
 
+  &__section {
+    padding-top: 30px;
+
+    @media #{$mobile} {
+      padding-top: 0;
+    }
+
+    h1 {
+      color: $red;
+    }
+  }
+
   &__illustration {
     img {
       max-height: 700px;
@@ -151,7 +167,7 @@
     font-weight: bolder;
     line-height: 1;
     color: $red;
-    margin-bottom: 77px;
+    margin-bottom: 23px;
 
     @media #{$mobile} {
       margin-bottom: 23px;
