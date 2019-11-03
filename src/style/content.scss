@@ -83,11 +83,7 @@
     &__subheader {
       color: #fff;
       font-weight: normal;
-      max-width: 500px;
-
-      &.tech {
-        max-width: 700px;
-      }
+      max-width: 700px;
 
       @media #{$mobile} {
         font-size: 1.3em;
