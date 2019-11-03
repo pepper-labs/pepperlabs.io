@@ -13,6 +13,7 @@
 
     @media #{$mobile} {
       min-height: 390px;
+      height: auto;
     }
 
     @media only screen and (width: 1024px) and (height: 768px) {
@@ -107,10 +108,18 @@
       margin-bottom: -$illustrationMargin + 50px;
     }
 
+    @media only screen and (max-width: 1100px) {
+      display: none;
+    }
+
     &__image {
       transform: translateX(18%);
       pointer-events: none;
       width: 800px;
+
+      @media only screen and (max-width: 1400px) {
+        transform: translateX(28%);
+      }
 
       @media #{$mobile} {
         transform: none;
