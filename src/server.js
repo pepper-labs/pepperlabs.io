@@ -18,7 +18,6 @@ if (config.isProxied) {
 
 app.use(cors());
 app.use(helmet());
-app.use(express.static(path.join(__dirname, '../dist')));
 
 const server = app.listen(config.port, () => logger.log('start', { port: config.port }));
 
