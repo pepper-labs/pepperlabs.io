@@ -1,6 +1,8 @@
 'use strict';
 
+const http = require('http');
 const path = require('path');
+
 const debug = require('debug');
 const express = require('express');
 const cors = require('cors');
@@ -38,3 +40,5 @@ process.on('SIGTERM', () => {
   logger.log('shutdown', {});
   server.close();
 });
+
+setInterval(() => http.get('https://pepperlabs.io'), 29 * 60 * 1000);
