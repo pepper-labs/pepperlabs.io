@@ -1,6 +1,6 @@
 'use strict';
 
-const http = require('http');
+const https = require('https');
 const path = require('path');
 
 const debug = require('debug');
@@ -41,4 +41,4 @@ process.on('SIGTERM', () => {
   server.close();
 });
 
-setInterval(() => http.get('https://pepperlabs.io'), 29 * 60 * 1000);
+setInterval(() => https.get('https://pepperlabs.io'), 29 * 60 * 1000);
