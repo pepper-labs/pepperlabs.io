@@ -6,14 +6,14 @@
   align-items: center;
   justify-content: center;
   background-color: $almostBlack;
-  background-image: url('/assets/lnading-hero@2x.jpg');
+  background-image: url('/static/lnading-hero@2x.jpg');
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: auto 100%;
 
   @media #{$iPad} {
     height: $heroHeightSmall;
-    background-image: url('/assets/lnading-hero.jpg');
+    background-image: url('/static/lnading-hero.jpg');
   }
 
   &__text {
@@ -59,7 +59,7 @@
 
 .culture {
   background-color: $almostWhite;
-  background-image: url('/assets/background-circle.svg');
+  background-image: url('/static/background-circle.svg');
   background-position: top right;
   padding: 170px 0;
   background-repeat: no-repeat;
@@ -101,7 +101,7 @@
     bottom: 0;
     right: 0;
     top: 0;
-    background-image: url('/assets/lines.svg');
+    background-image: url('/static/lines.svg');
     background-repeat: no-repeat;
     background-position: 80% 0;
     display: block;
@@ -133,7 +133,7 @@
 .product-vision {
   padding: 170px 0;
   background-color: $almostWhite;
-  background-image: url('/assets/angles.svg');
+  background-image: url('/static/angles.svg');
   background-size: cover;
 
   @media #{$mobile} {
