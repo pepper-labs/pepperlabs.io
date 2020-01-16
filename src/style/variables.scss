@@ -3,7 +3,15 @@ $gray: #2B2B2B;
 $red: #EC3A3A;
 $yellow: #FFD71F;
 $blue: #0A3542;
+$almostBlack: #0b0d0c;
+$almostWhite: #fafafa;
 
-$mobile: "only screen and (max-width : 800px)";
+$iPad: "only screen and (max-width : 768px)";
+$mobile: "only screen and (max-width : 767px)";
 $tallMobile: "only screen and (max-width : 760px)";
 $smallMobile: "only screen and (max-width : 374px)";
+
+$navBackground: $almostBlack;
+$navigationLogoSize: 35px;
+$heroHeight: 600px;
+$heroHeightSmall: 400px;

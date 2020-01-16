@@ -11,7 +11,7 @@
     height: 45vh;
     min-height: 400px;
 
-    @media #{$mobile} {
+    @media #{$iPad} {
       min-height: 390px;
       height: auto;
     }
@@ -39,7 +39,7 @@
     transform: translateY(-50%) translateX(-50%);
     word-spacing: 100%;
 
-    @media #{$mobile} {
+    @media #{$iPad} {
       text-align: center;
       transform: none;
       width: auto;
@@ -51,7 +51,7 @@
       text-align: left;
       display: inline-block;
 
-      @media #{$mobile} {
+      @media #{$iPad} {
         padding: 17px;
       }
     }
@@ -71,7 +71,7 @@
         font-size: $size * .8;
       }
 
-      @media #{$mobile} {
+      @media #{$iPad} {
         font-size: $size * .6;
         width: auto;
       }
@@ -86,7 +86,7 @@
       font-weight: normal;
       max-width: 700px;
 
-      @media #{$mobile} {
+      @media #{$iPad} {
         font-size: 1.3em;
       }
     }
@@ -102,7 +102,7 @@
     margin-bottom: -$illustrationMargin;
     overflow: hidden;
 
-    @media #{$mobile} {
+    @media #{$iPad} {
       left: 0;
       right: 0;
       margin-bottom: -$illustrationMargin + 50px;
@@ -121,7 +121,7 @@
         transform: translateX(28%);
       }
 
-      @media #{$mobile} {
+      @media #{$iPad} {
         transform: none;
         width: 600px;
       }
@@ -133,7 +133,7 @@
   margin: -100px auto 0 auto;
   font-size: 1.2em;
 
-  @media #{$mobile} {
+  @media #{$iPad} {
     max-width: 90%;
     margin: -70px auto 0;
   }
@@ -146,7 +146,7 @@
   &__section {
     padding-top: 30px;
 
-    @media #{$mobile} {
+    @media #{$iPad} {
       padding-top: 0;
     }
   }
@@ -157,7 +157,7 @@
       width: 120%;
       margin-left: -50%;
 
-      @media #{$mobile} {
+      @media #{$iPad} {
         display: none;
       }
     }
@@ -170,7 +170,7 @@
     color: $red;
     margin-bottom: 23px;
 
-    @media #{$mobile} {
+    @media #{$iPad} {
       margin-bottom: 23px;
     }
   }
@@ -182,7 +182,7 @@
   padding: 44px 0;
   margin-bottom: -37px;
 
-  @media #{$mobile} {
+  @media #{$iPad} {
     margin-top: 0;
     padding: 17px 0;
     background-color: transparent;
@@ -195,7 +195,7 @@
     margin: 0 auto;
     box-shadow: 10px 10px 0 rgba($gray, .1);
 
-    @media #{$mobile} {
+    @media #{$iPad} {
       padding: 11px 0;
     }
   }
@@ -207,7 +207,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    @media #{$mobile} {
+    @media #{$iPad} {
       display: block;
     }
 
@@ -219,7 +219,7 @@
       &__wrapper {
         padding: 11px;
 
-        @media #{$mobile} {
+        @media #{$iPad} {
           padding: 5px;
         }
       }

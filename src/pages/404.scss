@@ -33,7 +33,7 @@
     background-image: linear-gradient(to bottom, #64A1C4, #FFA585 50%, #FFB37C 100%);
     transform: translateX(7%);
 
-    @media #{$mobile} {
+    @media #{$iPad} {
       display: none;
     }
   }

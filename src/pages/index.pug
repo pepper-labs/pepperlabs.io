@@ -11,19 +11,19 @@ html(lang="en")
     include ../partials/style
   body
     .site-wrapper
+      include ../partials/navbar
       .hero
-        include ../partials/logo-bw
-        .hero__wrapper
-          .hero__text
-            .hero__text__wrapper
-              h1.hero__text__header build better products
-              div
-                h2.hero__text__subheader
-                  | We provide professional hands-on engineering, training, coaching
-                  | to bring cutting edge technology and agility to your business.
-                a(href="#contact-us").button.button--white find out more
-          .hero__illustration
-            include hero.svg
+        .hero__text
+          h1.hero__text__header IT Transformation
+          h2.hero__text__subheader
+            | We provide professional hands-on engineering, training, coaching to bring cutting edge technology and
+            | agility to your business.
+
+      section.culture.section
+        .culture__container
+          .culture__container__text
+            h1.section__title Culture transformation
+            p.section__text With experience from different industries and scaled agile methodologies (SAFe, LeSS, Spotify like, Nexus etc.). We are focusing on real values and solutions behind the agile stamp.
 
       .about
         .about__col
