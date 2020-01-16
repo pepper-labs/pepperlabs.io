@@ -72,9 +72,9 @@ const plugins = [
     minify: true
   }),
   new HtmlWebpackPlugin({
-    template: './src/pages/technology/technology.pug',
+    template: './src/pages/software/software.pug',
     chunks: ['content'],
-    filename: './technology/index.html',
+    filename: './software/index.html',
     minify: true
   })
 ];
