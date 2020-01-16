@@ -1,15 +1,12 @@
 @import './variables.scss';
 
 .common-hero {
-  $illustrationMargin: 200px;
   z-index: 1;
-  background-image: linear-gradient(to bottom right, darken($gray, 10%), lighten($gray, 10%));
-  margin-bottom: $illustrationMargin;
+  background: $almostBlack;
 
   &__wrapper {
     position: relative;
-    height: 45vh;
-    min-height: 400px;
+    height: 600px;
 
     @media #{$iPad} {
       min-height: 390px;
@@ -33,7 +30,7 @@
   &__text {
     $size: 5.5em;
     position: absolute;
-    width: 50%;
+    width: 70%;
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
@@ -58,13 +55,10 @@
 
     &__header {
       padding: 0;
-      font-weight: bold;
-      font-family: 'Roboto Slab', serif;
+      font-weight: 900;
+      font-size: 97px;
       color: #fff;
-      font-size: $size;
-      display: inline-block;
       width: $size;
-      line-height: 1.1;
       margin: 0 0 11px;
 
       @media #{$tallMobile} {
@@ -91,46 +85,11 @@
       }
     }
   }
-
-  &__illustration {
-    z-index: 2;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    text-align: right;
-    pointer-events: none;
-    margin-bottom: -$illustrationMargin;
-    overflow: hidden;
-
-    @media #{$iPad} {
-      left: 0;
-      right: 0;
-      margin-bottom: -$illustrationMargin + 50px;
-    }
-
-    @media only screen and (max-width: 1100px) {
-      display: none;
-    }
-
-    &__image {
-      transform: translateX(18%);
-      pointer-events: none;
-      width: 800px;
-
-      @media only screen and (max-width: 1400px) {
-        transform: translateX(28%);
-      }
-
-      @media #{$iPad} {
-        transform: none;
-        width: 600px;
-      }
-    }
-  }
 }
 
 .content {
-  margin: -100px auto 0 auto;
+  padding: 70px 0;
+  margin: 0 auto;
   font-size: 1.2em;
 
   @media #{$iPad} {
