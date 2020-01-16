@@ -130,6 +130,34 @@
   }
 }
 
+.product-vision {
+  padding: 170px 0;
+  background-color: $almostWhite;
+  background-image: url('/assets/angles.svg');
+  background-size: cover;
+
+  @media #{$mobile} {
+    padding: 100px 0;
+    background-position: 60% 0;
+  }
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media #{$mobile} {
+      width: 90%;
+    }
+
+    &__text {
+      flex: 0 1 550px;
+    }
+  }
+}
+
 .section {
   &__title {
     font-weight: 900;
