@@ -49,7 +49,7 @@
       display: inline-block;
 
       @media #{$iPad} {
-        padding: 100px 17px 30px 17px;
+        padding: 100px $heroHorizontalPadding $heroHorizontalPadding;
       }
     }
 
