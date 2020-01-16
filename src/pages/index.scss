@@ -205,12 +205,12 @@
 
 .team {
   padding: 47px 0;
-  margin: -250px auto 0 auto;
+  margin: 0 auto;
   display: flex;
+  max-width: 1200px;
 
   @media #{$iPad} {
     max-width: 90%;
-    margin: -250px auto 0;
   }
 
   &__content {
@@ -314,12 +314,8 @@
 }
 
 .testimonials {
-  $illustrationNegativeSpaceSize: 296px;
-  padding-bottom: $illustrationNegativeSpaceSize;
-  overflow-x: hidden;
-
   &__content {
-    background-image: linear-gradient(to bottom right, darken($gray, 10%), lighten($gray, 10%));
+    background: $almostBlack;
     padding: 17px;
   }
 
@@ -330,26 +326,12 @@
     font-weight: bolder;
     line-height: 1;
     max-width: 960px;
-    margin: 37px auto -250px auto;
+    margin: 37px auto;
 
     @media #{$iPad} {
-      margin: 0 auto -100px auto;
+      margin: 0 auto;
       font-size: 1.5em;
       padding: 17px;
-    }
-  }
-
-  &__illustration {
-    pointer-events: none;
-    width: 1692px;
-    transform: translateY(40%) translateX(-50%);
-    position: relative;
-    left: 50%;
-
-    @media #{$iPad} {
-      transform: translateY(42.4%) translateX(-50%);
-      position: relative;
-      width: 900px;
     }
   }
 
@@ -367,34 +349,5 @@
 
   &__employer {
     transform: scale(0.3);
-  }
-}
-
-.services {
-  margin: 0;
-  padding: 19px;
-  list-style: none;
-
-  &__item {
-    font-size: 1.2em;
-    padding: 15px;
-    color: $gray;
-    border-bottom: 1px solid lighten($gray, 78%);
-    min-height: 50px;
-    display: flex;
-    align-items: center;
-    flex-flow: row;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-    &:last-child {
-      border-bottom: none;
-    }
-
-    &__context {
-      color: lighten($gray, 18%);
-      font-size: .7em;
-      flex: 0 0 100%;
-    }
   }
 }
