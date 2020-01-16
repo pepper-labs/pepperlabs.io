@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,700|Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,700|Roboto:300,500,400,700');
 @import './variables.scss';
 
 @import 'navbar';
@@ -30,14 +30,15 @@ body {
   text-transform: uppercase;
   display: inline-block;
   text-decoration: none;
-  font-weight: 400;
-  color: lighten($gray, 40%);
-  border: 3px solid lighten($gray, 40%);
+  font-weight: 500;
+  font-size: 14px;
+  border: 3px solid $almostBlack;
   padding: 5px 17px;
+  color: $almostBlack;
 
   &:hover {
     color: #fff;
-    background-color: lighten($gray, 40%);
+    background-color: $almostBlack;
   }
 
   &--white {
