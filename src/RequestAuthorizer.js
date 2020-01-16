@@ -18,7 +18,7 @@ module.exports = class RequestAuthorizer {
       return false;
     }
 
-    this._logger.log('atuhorized', { tokenSource });
+    this._logger.log('authorized', { tokenSource });
 
     return true;
   }
