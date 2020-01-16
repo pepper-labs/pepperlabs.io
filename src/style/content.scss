@@ -49,7 +49,7 @@
       display: inline-block;
 
       @media #{$iPad} {
-        padding: 17px;
+        padding: 100px 17px 30px 17px;
       }
     }
 
@@ -94,7 +94,6 @@
 
   @media #{$iPad} {
     max-width: 90%;
-    margin: -70px auto 0;
   }
 
   &__wrapper {
