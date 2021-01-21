@@ -6,10 +6,10 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WorkboxPlugin = require('workbox-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -23,9 +23,10 @@ const optimization = isProduction ? {
       }
     }
   },
+  minimize: true,
   minimizer: [
-    new UglifyJsPlugin({ cache: true, parallel: true, sourceMap: true }),
-    new OptimizeCssAssetsWebpackPlugin({})
+    new OptimizeCssAssetsWebpackPlugin({}),
+    new TerserPlugin({ test: /\.js$/ })
   ]
 } : {
   removeAvailableModules: false,
